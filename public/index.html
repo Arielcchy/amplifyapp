@@ -29,15 +29,28 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <form action="" method="get">
+        <label>User Name</label><br>
+        <input type="text" id="uName"><br>
+        <label>First Name :</label><br>
+        <input type="text" id="fName"><br>
+        <label>Last Name :</label><br>
+        <input type="text" id="lName"><br>
+        <label>Birthday :</label><br>
+        <input type="text" id="birthday"><br>
+        <label>Gender :</label><br>
+        <input type="radio" name="gender" id="gender" value="1">Female&nbsp;
+        <input type="radio" name="gender" id="gender" value="2">Male&nbsp;
+        <input type="radio" name="gender" id="gender" value="3">Other<br>
+        <label>Country of Resident :</label><br>
+        <input type="text" id="country"><br>
+        <label>Favourite Music Genres :</label><br>
+        <input type="checkbox" name="genres1" id="favGenres" value="hipHop">Hip Hop&nbsp;
+        <input type="checkbox" name="genres2" id="favGenres" value="blues">Blues&nbsp;
+        <input type="checkbox" name="genres3" id="favGenres" value="jazz">Jazz&nbsp;
+        <input type="checkbox" name="genres4" id="favGenres" value="rock">Rock<br><br>
+        <!-- set button onClick method to call function we defined passing input values as parameters -->
+        <input type="submit" value="signup">SIGN UP<br>
+    </form>
   </body>
 </html>
